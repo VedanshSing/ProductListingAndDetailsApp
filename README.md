@@ -3,7 +3,6 @@
 Simple product listing and details React app with a filter page, category-driven filtering, and client-side pagination.
 
 **Setup Instructions**
-
 - **Install dependencies**: run
 
 ```bash
@@ -41,10 +40,22 @@ npm run dev
 **Improvements If Given More Time**
 
 - **Server-side pagination / filtering**: support API queries with page/limit and category filters to avoid loading the full dataset at once.
-- **Caching & SWR**: add a cache layer (React Query / SWR) to reduce repeated network requests and provide stale-while-revalidate UX.
 - **Accessibility**: improve keyboard navigation, ARIA attributes for pagination, and semantic HTML for screen readers.
-- **Unit / Integration Tests**: add tests for `Sidebar` selection logic, `FilterPage` filtering, and `ProductCard` rendering.
 - **UI polish & responsiveness**: refine breakpoints, card aspect ratios, and image loading placeholders.
-- **Performance**: lazy-load images, virtualize long lists, and debounce filter inputs.
 
-If you want, I can add a short development checklist, CI steps, or wire up React Query and tests next.
+If you want, I can add a short development checklist, CI steps, or wire up React Query and tests next.# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
